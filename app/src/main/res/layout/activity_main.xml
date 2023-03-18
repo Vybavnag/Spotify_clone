@@ -36,8 +36,6 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
-        android:drawableLeft="@drawable/baseline_person_outline_24"
-        android:drawablePadding="20dp"
         android:hint="Username"
         android:padding="20dp"
         android:textColor="@color/white"
@@ -53,8 +51,6 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="#30ffffff"
-        android:drawableLeft="@drawable/baseline_password_24"
-        android:drawablePadding="20dp"
         android:hint="Password"
         android:inputType="textPassword"
         android:padding="20dp"
@@ -77,7 +73,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/ForgotPassword"
         android:layout_below="@id/loginbtn"
-        android:text="Forgot Password?"
+        android:text="Forgot Your Password details? Get help signing in"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
@@ -86,8 +82,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/others"
-        android:layout_above="@id/socialicons"
-        android:text="or sign in with"
+        android:layout_below="@id/ForgotPassword"
+        android:text="OR"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/log"
+        android:layout_below="@id/others"
+        android:text="Login With Facebook"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         />
@@ -96,19 +102,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/socialicons"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/others"
+        android:layout_toLeftOf="@id/log"
         android:gravity="center">
 
         <ImageView
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:layout_margin="20dp"
-            android:src="@drawable/facebook"/>
+            android:src="@drawable/facebook" />
     </LinearLayout>
-        
-
-
-
-
 
 </RelativeLayout>
