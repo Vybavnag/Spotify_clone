@@ -62,12 +62,12 @@
         android:textColorHint="@color/white" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginbtn"
         android:layout_below="@id/Password"
         android:text="LOGIN"
-        android:backgroundTint="@color/purple_700"
+        android:backgroundTint="#30ffffff"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         />
